@@ -390,6 +390,3 @@ AdminConfig = {
   logoutRedirect: 'login' // Redirect to the route named 'login' after logging out.
 }
 ```
-
-### Premium Support ###
-Have an urgent issue or want help with implementation? Start a conversation with [Meteor Factory](http://meteorfactory.io).
