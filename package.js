@@ -1,7 +1,7 @@
 Package.describe({
   name: "robfines:meteor-admin-extended",
   summary: "A complete admin dashboard solution",
-  version: "1.0.0",
+  version: "1.0.1",
   git: "https://github.com/rfines/meteor-admin-extended.git"
 });
 
