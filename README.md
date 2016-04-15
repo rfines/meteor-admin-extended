@@ -165,28 +165,8 @@ Comments: {
 
 #### Users ####
 
-The Meteor.users collection is automatically added to the admin panel.
-You can create, view and delete users.
+The Meteor.users collection will NOT be added automatically. This is one of the things that makes this package different from the others. If you want to add the Meteor.users collection, you can do so the same way you add every other collection.
 
-If you have attached a schema to the user, it will automatically be used for the edit form.
-You can disable this functionality, or customize the schema that is used.
-
-```javascript
-AdminConfig = {
-  //...
-
-  // Disable editing of user fields:
-  userSchema: null,
-
-  // Use a custom SimpleSchema:
-  userSchema: new SimpleSchema({
-    'profile.gender': {
-       type: String,
-       allowedValues: ['male', 'female']
-     }
-  })
-}
-```
 
 #### Custom Templates ####
 The default admin templates are autoForm instances based on the schemas assigned to the collections. If they don't do the job, you specify a custom template to use for each of the `new`,`edit` and `view` screens for each collection.

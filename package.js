@@ -1,29 +1,25 @@
 Package.describe({
-  name: "yogiben:admin",
+  name: "robfines:meteor-admin-extended",
   summary: "A complete admin dashboard solution",
-  version: "1.2.6",
-  git: "https://github.com/yogiben/meteor-admin"
+  version: "1.0.0",
+  git: "https://github.com/rfines/meteor-admin-extended.git"
 });
 
 Package.on_use(function(api){
 
   both = ['client','server']
 
-  api.versionsFrom('METEOR@1.0');
-
+  api.versionsFrom('METEOR@1.1');
+  api.use(['check','reactive-var','underscore','coffeescript'], both)
   api.use(
     ['iron:router@1.0.9',
-    'coffeescript',
-    'underscore',
-    'reactive-var',
-    'check',
-    'aldeed:collection2@2.5.0',
-    'aldeed:autoform@5.5.1',
-    'aldeed:template-extension@4.0.0',
+    'aldeed:collection2@2.6.0',
+    'aldeed:autoform@4.2.2',
+    'aldeed:template-extension@3.4.3',
     'alanning:roles@1.2.13',
     'raix:handlebar-helpers@0.2.5',
     'reywood:publish-composite@1.4.2',
-    'momentjs:moment@2.10.6',
+    'momentjs:moment@2.10.0',
     'aldeed:tabular@1.4.0',
     'meteorhacks:unblock@1.1.0',
     'zimme:active-route@2.3.2',
@@ -65,3 +61,4 @@ Package.on_use(function(api){
 
   api.export('AdminDashboard',both)
 });
+
